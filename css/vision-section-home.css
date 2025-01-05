@@ -1,0 +1,486 @@
+/* Vision Section Styles */
+.vision-section {
+    padding: 120px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.vision-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.vision-title {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 60px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.vision-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(135deg, #0061ff, #60efff);
+    border-radius: 2px;
+}
+
+.vision-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.vision-text {
+    padding-right: 40px;
+}
+
+.vision-subtitle {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 25px;
+    line-height: 1.3;
+}
+
+.vision-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.vision-points {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+    display: grid;
+    gap: 25px;
+}
+
+.vision-point {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 
+        0 4px 20px rgba(0, 0, 0, 0.05),
+        0 0 0 1px rgba(0, 97, 255, 0.1);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    overflow: hidden;
+}
+
+.vision-point::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, #0061ff, #60efff);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.vision-point:hover {
+    transform: translateY(-5px);
+    box-shadow: 
+        0 8px 30px rgba(0, 0, 0, 0.1),
+        0 0 0 1px rgba(0, 97, 255, 0.2);
+}
+
+.vision-point:hover::before {
+    opacity: 1;
+}
+
+.vision-point i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    font-size: 24px;
+    color: white;
+    background: linear-gradient(135deg, #0061ff, #60efff);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.vision-point:hover i {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 5px 15px rgba(0, 97, 255, 0.3);
+}
+
+.vision-point-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin: 0;
+    transition: transform 0.3s ease;
+}
+
+.vision-point:hover .vision-point-text {
+    transform: translateX(5px);
+}
+
+.vision-point::after {
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, rgba(0, 97, 255, 0.05), rgba(96, 239, 255, 0.05));
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.vision-point:hover::after {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.vision-images {
+    position: relative;
+    height: 600px;
+    perspective: 1000px;
+}
+
+.vision-image {
+    position: absolute;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.vision-image::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(45deg, rgba(0, 97, 255, 0.1), rgba(96, 239, 255, 0.1));
+    z-index: 1;
+    transition: opacity 0.3s ease;
+}
+
+.vision-image::after {
+    content: attr(data-title);
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(0, 97, 255, 0.9), rgba(96, 239, 255, 0.9));
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    opacity: 0;
+    transform: scale(1.1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+}
+
+.vision-image:hover::after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.vision-image.main {
+    width: 70%;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    border: 8px solid white;
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.15),
+        0 0 0 1px rgba(0, 97, 255, 0.1);
+}
+
+.vision-image.top {
+    width: 50%;
+    height: 300px;
+    top: 5%;
+    right: 0;
+    z-index: 2;
+    transform: rotate(8deg);
+    border: 6px solid white;
+    box-shadow: 
+        0 15px 35px rgba(0, 0, 0, 0.2),
+        0 0 0 1px rgba(96, 239, 255, 0.1);
+}
+
+.vision-image.bottom {
+    width: 50%;
+    height: 300px;
+    bottom: 5%;
+    left: 0;
+    z-index: 1;
+    transform: rotate(-8deg);
+    border: 6px solid white;
+    box-shadow: 
+        0 15px 35px rgba(0, 0, 0, 0.2),
+        0 0 0 1px rgba(0, 97, 255, 0.1);
+}
+
+.vision-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.vision-image:hover img {
+    transform: scale(1.1);
+}
+
+.vision-image:hover {
+    border-color: rgba(0, 97, 255, 0.3);
+}
+
+.vision-image.main:hover {
+    transform: translate(-50%, -50%) scale(1.02);
+}
+
+.vision-image.top:hover {
+    transform: rotate(8deg) scale(1.05);
+    z-index: 4;
+}
+
+.vision-image.bottom:hover {
+    transform: rotate(-8deg) scale(1.05);
+    z-index: 4;
+}
+
+.vision-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    z-index: 2;
+    display: block;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.3) 100%
+    );
+    transform: skewX(-25deg);
+    transition: all 0.7s ease;
+}
+
+.vision-image:hover::before {
+    animation: shine 0.7s;
+}
+
+@keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+
+@keyframes pulseBorder {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 97, 255, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(0, 97, 255, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 97, 255, 0);
+    }
+}
+
+.vision-image:hover {
+    animation: pulseBorder 1.5s infinite;
+}
+
+/* Animation for floating effect */
+@keyframes floatImage {
+    0%, 100% {
+        transform: translate(-50%, -50%) translateY(0);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateY(-15px);
+    }
+}
+
+@keyframes floatImageTop {
+    0%, 100% {
+        transform: rotate(8deg) translateY(0);
+    }
+    50% {
+        transform: rotate(8deg) translateY(-15px);
+    }
+}
+
+@keyframes floatImageBottom {
+    0%, 100% {
+        transform: rotate(-8deg) translateY(0);
+    }
+    50% {
+        transform: rotate(-8deg) translateY(-15px);
+    }
+}
+
+.vision-image.main.animate {
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+.vision-image.top.animate {
+    animation: floatImageTop 4s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+
+.vision-image.bottom.animate {
+    animation: floatImageBottom 4s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .vision-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .vision-text {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .vision-images {
+        height: 500px;
+    }
+
+    .vision-image.main {
+        width: 80%;
+        height: 350px;
+    }
+
+    .vision-image.top,
+    .vision-image.bottom {
+        width: 60%;
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .vision-section {
+        padding: 80px 0;
+    }
+
+    .vision-title {
+        font-size: 2.2rem;
+        margin-bottom: 40px;
+    }
+
+    .vision-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .vision-description {
+        font-size: 1rem;
+    }
+
+    .vision-points {
+        gap: 20px;
+    }
+
+    .vision-point {
+        padding: 20px;
+    }
+
+    .vision-point i {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        margin-right: 15px;
+    }
+
+    .vision-point-text {
+        font-size: 1rem;
+    }
+
+    .vision-images {
+        height: 450px;
+    }
+
+    .vision-image.main {
+        width: 85%;
+        height: 300px;
+        border-width: 6px;
+    }
+
+    .vision-image.top,
+    .vision-image.bottom {
+        width: 65%;
+        height: 220px;
+        border-width: 4px;
+    }
+}
+
+@media (max-width: 480px) {
+    .vision-title {
+        font-size: 1.8rem;
+    }
+
+    .vision-points {
+        gap: 15px;
+    }
+
+    .vision-point {
+        padding: 15px;
+    }
+
+    .vision-point i {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+        margin-right: 12px;
+    }
+
+    .vision-point-text {
+        font-size: 0.9rem;
+    }
+
+    .vision-images {
+        height: 400px;
+    }
+
+    .vision-image.main {
+        width: 90%;
+        height: 250px;
+    }
+
+    .vision-image.top {
+        width: 70%;
+        height: 180px;
+        top: 10%;
+    }
+
+    .vision-image.bottom {
+        width: 70%;
+        height: 180px;
+        bottom: 10%;
+    }
+}

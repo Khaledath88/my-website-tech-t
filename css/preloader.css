@@ -1,0 +1,207 @@
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.8s ease-out, visibility 0.8s ease-out;
+}
+
+.preloader.fade-out {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.tech-loader {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.circuit-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: rotate 4s linear infinite;
+}
+
+.circuit-line {
+    position: absolute;
+    background: var(--color-primary, #0061ff);
+    opacity: 0.6;
+}
+
+/* First diagonal line (\) */
+.line1 {
+    width: 140%;
+    height: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    transform-origin: center;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+/* Second diagonal line (/) */
+.line2 {
+    width: 140%;
+    height: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    transform-origin: center;
+    animation: pulse 2s ease-in-out infinite 0.3s;
+}
+
+.circuit-dot {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: var(--color-primary, #0061ff);
+    border-radius: 50%;
+    animation: glow 1.5s ease-in-out infinite;
+    z-index: 1;
+}
+
+/* Top dot */
+.dot1 {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-delay: 0s;
+}
+
+/* Right dot */
+.dot2 {
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    animation-delay: 0.3s;
+    animation-name: glow-right;
+}
+
+/* Bottom dot */
+.dot3 {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    animation-delay: 0.6s;
+}
+
+/* Left dot */
+.dot4 {
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    animation-delay: 0.9s;
+}
+
+/* Center point (pseudo-element) */
+.circuit-container::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: var(--color-primary, #0061ff);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.8;
+    box-shadow: 0 0 15px var(--color-primary, #0061ff);
+    animation: center-glow 2s ease-in-out infinite;
+}
+
+.loading-text {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--color-primary, #0061ff);
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.dots {
+    display: inline-block;
+    animation: dots 2s infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 1;
+        box-shadow: 0 0 15px var(--color-primary, #0061ff);
+    }
+}
+
+@keyframes glow {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.5;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.5);
+        opacity: 1;
+        box-shadow: 0 0 15px var(--color-primary, #0061ff);
+    }
+}
+
+@keyframes glow-right {
+    0%, 100% {
+        transform: translate(50%, -50%) scale(1);
+        opacity: 0.5;
+    }
+    50% {
+        transform: translate(50%, -50%) scale(1.5);
+        opacity: 1;
+        box-shadow: 0 0 15px var(--color-primary, #0061ff);
+    }
+}
+
+@keyframes center-glow {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.8;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+        opacity: 1;
+    }
+}
+
+@keyframes dots {
+    0%, 20% {
+        content: '.';
+    }
+    40% {
+        content: '..';
+    }
+    60%, 100% {
+        content: '...';
+    }
+}

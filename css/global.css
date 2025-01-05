@@ -1,0 +1,151 @@
+/* Global Styles */
+:root {
+    --color-primary: #0061ff;
+    --color-text: #2d2d2d;
+    --color-text-light: #666666;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    color: var(--color-text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hide default cursor everywhere */
+* {
+    cursor: none !important;
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}
+
+/* Extra specificity for links */
+html body a,
+html body a *,
+html body button,
+html body button *,
+html body [role="button"],
+html body [role="button"] *,
+html body .hover-effect,
+html body .hover-effect * {
+    cursor: none !important;
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+    pointer-events: auto !important;
+}
+
+/* Allow text selection only in specific areas */
+p:not(a p):not(button p),
+h1:not(a h1):not(button h1),
+h2:not(a h2):not(button h2),
+h3:not(a h3):not(button h3),
+h4:not(a h4):not(button h4),
+h5:not(a h5):not(button h5),
+h6:not(a h6):not(button h6),
+span:not(a span):not(button span),
+input:not([type="button"]):not([type="submit"]),
+textarea {
+    -webkit-user-select: text !important;
+    -moz-user-select: text !important;
+    -ms-user-select: text !important;
+    user-select: text !important;
+    cursor: none !important;
+}
+
+/* Custom Cursor */
+.custom-cursor {
+    width: 30px;
+    height: 30px;
+    border: 2px solid var(--color-primary);
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 999999;
+    transform: translate(-50%, -50%);
+    transition: width 0.2s, height 0.2s, opacity 0.2s;
+    opacity: 1;
+    display: block;
+    mix-blend-mode: difference;
+    will-change: transform;
+}
+
+.custom-cursor-dot {
+    width: 6px;
+    height: 6px;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 999999;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.2s;
+    opacity: 1;
+    display: block;
+    will-change: transform;
+}
+
+/* Hover effect */
+.custom-cursor.hover {
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 97, 255, 0.1);
+    border-color: var(--color-primary);
+    mix-blend-mode: difference;
+}
+
+/* Text mode */
+.custom-cursor.text-mode {
+    width: 4px;
+    height: 25px;
+    border: none;
+    background: var(--color-primary);
+    border-radius: 1px;
+    opacity: 0.7;
+    mix-blend-mode: normal;
+}
+
+.custom-cursor.text-mode + .custom-cursor-dot {
+    opacity: 0;
+}
+
+/* Force cursor hiding on pseudo-elements */
+*::before,
+*::after {
+    cursor: none !important;
+}
+
+/* Hide cursor during text selection */
+::selection {
+    cursor: none !important;
+    background: rgba(0, 97, 255, 0.1);
+    color: var(--color-primary);
+}
+
+::-moz-selection {
+    cursor: none !important;
+    background: rgba(0, 97, 255, 0.1);
+    color: var(--color-primary);
+}
+
+/* Hide cursor on drag */
+*[draggable="true"] {
+    cursor: none !important;
+}
+
+/* Force pointer-events */
+a, button, .hover-effect {
+    pointer-events: auto !important;
+}

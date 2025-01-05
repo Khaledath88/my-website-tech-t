@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/hero.css" rel="stylesheet">
+    <link href="css/about-us-section-home.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/services-section-home.css">
+    <link rel="stylesheet" href="css/portfolio-section-home.css">
+    <link rel="stylesheet" href="css/vision-section-home.css">
+    <link rel="stylesheet" href="css/team-section-home.css">
+    <link rel="stylesheet" href="css/testimonial-section-home.css">
+    <link rel="stylesheet" href="css/faq-section-home.css">
+    <link rel="stylesheet" href="css/blog-section-home.css">
+    <link rel="stylesheet" href="css/pricing-section-home.css">
+    <link rel="stylesheet" href="css/cta-section-home.css">
+    <link rel="stylesheet" href="css/footer-section-home.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link href="css/preloader.css" rel="stylesheet">
+    <title>Tech Website - Home</title>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="tech-loader">
+                <div class="circuit-container">
+                    <div class="circuit-line line1"></div>
+                    <div class="circuit-line line2"></div>
+                    <div class="circuit-line line3"></div>
+                    <div class="circuit-dot dot1"></div>
+                    <div class="circuit-dot dot2"></div>
+                    <div class="circuit-dot dot3"></div>
+                    <div class="circuit-dot dot4"></div>
+                </div>
+                <div class="loading-text">Loading<span class="dots">...</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="top-info">
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@techwebsite.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 9:00 AM - 5:00 PM</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="top-social">
+                        <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Tech Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false">
+                <i class="fas fa-bars menu-icon"></i>
+                <i class="fas fa-times close-icon"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            <i class="fas fa-home-alt"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                            <i class="fas fa-user-circle"></i>
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">
+                            <i class="fas fa-laptop-code"></i>
+                            <span>Services</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Portfolio</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">
+                            <i class="fas fa-newspaper"></i>
+                            <span>Blog</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- Mobile Icons -->
+                <div class="mobile-nav-icons d-lg-none">
+                    <button class="nav-icon-btn search-toggle">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="nav-icon-btn cart-toggle">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </button>
+                </div>
+                <div class="nav-icons d-none d-lg-flex">
+                    <button class="nav-icon-btn search-toggle">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="nav-icon-btn cart-toggle">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </button>
+                </div>
+                <!-- Search Overlay -->
+                <div class="search-overlay">
+                    <div class="search-content">
+                        <div class="search-header">
+                            <h4>Search</h4>
+                            <button class="search-close">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="search-body">
+                            <div class="search-form">
+                                <div class="search-input-wrapper">
+                                    <input type="text" class="search-input" placeholder="Type to search...">
+                                    <i class="fas fa-search search-icon"></i>
+                                </div>
+                                <div class="search-results">
+                                    <!-- Results will be populated here -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-social-icons">
+                    <div class="mobile-social-divider">
+                        <span>Follow Us</span>
+                    </div>
+                    <ul class="mobile-social">
+                        <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="hero-slider">
+            <!-- Slide 1 -->
+            <div class="hero-slide">
+                <div class="hero-slide-bg" style="background-image: url('assets/images/hero1.jpg')"></div>
+                <div class="hero-slide-overlay"></div>
+                <div class="hero-slide-content">
+                    <h1 class="hero-slide-title">Welcome to Tech Website</h1>
+                    <p class="hero-slide-subtitle">Discover innovative solutions and cutting-edge technology that transforms the way we work and live.</p>
+                    <a href="#services" class="hero-slide-button"><span>Explore</span></a>
+                </div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="hero-slide">
+                <div class="hero-slide-bg" style="background-image: url('assets/images/hero2.jpg')"></div>
+                <div class="hero-slide-overlay"></div>
+                <div class="hero-slide-content">
+                    <h1 class="hero-slide-title">Innovative Solutions</h1>
+                    <p class="hero-slide-subtitle">Empowering businesses with advanced technology and smart solutions for the digital age.</p>
+                    <a href="#about" class="hero-slide-button"><span>Learn More</span></a>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="hero-slide">
+                <div class="hero-slide-bg" style="background-image: url('assets/images/hero3.jpg')"></div>
+                <div class="hero-slide-overlay"></div>
+                <div class="hero-slide-content">
+                    <h1 class="hero-slide-title">Expert Team</h1>
+                    <p class="hero-slide-subtitle">Our skilled professionals are ready to help you achieve your technology goals.</p>
+                    <a href="#contact" class="hero-slide-button"><span>Contact</span></a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Controls -->
+        <div class="hero-controls">
+            <button class="hero-control prev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="hero-control next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+        
+        <!-- Dots -->
+        <div class="hero-dots">
+            <button class="hero-dot active"></button>
+            <button class="hero-dot"></button>
+            <button class="hero-dot"></button>
+        </div>
+    </section>
+    <!-- About Us Section -->
+    <section class="about-us-section" id="about">
+        <div class="floating-elements">
+            <div class="floating-square square-1"></div>
+            <div class="floating-square square-2"></div>
+            <div class="floating-square square-3"></div>
+            <div class="floating-circle circle-1"></div>
+            <div class="floating-circle circle-2"></div>
+            <div class="floating-triangle triangle-1"></div>
+            <div class="floating-dots dots-1"></div>
+            <div class="floating-ring ring-1"></div>
+        </div>
+        <div class="about-us-container">
+            <div class="about-us-content">
+                <h2 class="about-us-title">Innovating the Future of Technology</h2>
+                <p class="about-us-subtitle">We're a team of passionate tech enthusiasts dedicated to delivering cutting-edge solutions that transform businesses and enhance user experiences.</p>
+                
+                <div class="about-us-features">
+                    <div class="feature-item">
+                        <i class="fas fa-rocket feature-icon"></i>
+                        <h3 class="feature-title">Innovation First</h3>
+                        <p class="feature-text">Pushing boundaries with cutting-edge technology solutions.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-shield-alt feature-icon"></i>
+                        <h3 class="feature-title">Secure & Reliable</h3>
+                        <p class="feature-text">Enterprise-grade security for peace of mind.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-users feature-icon"></i>
+                        <h3 class="feature-title">Expert Team</h3>
+                        <p class="feature-text">Skilled professionals dedicated to your success.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-clock feature-icon"></i>
+                        <h3 class="feature-title">24/7 Support</h3>
+                        <p class="feature-text">Round-the-clock assistance whenever you need it.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-us-image">
+                <div class="image-container">
+                    <div class="image-wrapper">
+                        <img src="assets/images/about-us.jpg" alt="Our Tech Innovation Team">
+                        <div class="shine"></div>
+                    </div>
+                </div>
+                <div class="experience-badge">
+                    <div class="experience-number" data-value="15">15+</div>
+                    <div class="experience-text">Years of Excellence</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About Us Section -->
+    <main>
+        <section class="portfolio-section" id="portfolio">
+            <div class="portfolio-container">
+                <h2 class="portfolio-title">Our Work</h2>
+                <div class="portfolio-grid">
+                    <!-- Portfolio items will be dynamically added by JavaScript -->
+                </div>
+            </div>
+        </section>
+    
+        <div class="portfolio-modal">
+            <div class="modal-content">
+                <!-- Modal content will be dynamically inserted here -->
+            </div>
+        </div>
+
+        <!-- Team Section -->
+        <section class="team-section" id="team">
+            <!-- Floating Shapes -->
+            <div class="team-shape team-shape-1"></div>
+            <div class="team-shape team-shape-2"></div>
+            <div class="team-shape team-shape-3"></div>
+            <div class="team-shape team-shape-4"></div>
+
+            <div class="team-container">
+                <div class="team-title-container">
+                    <h3 class="team-subtitle">Meet Our Team</h3>
+                    <h2 class="team-title">Expert Professionals</h2>
+                    <p class="team-description">
+                        Our diverse team of experts brings together years of experience and innovation to deliver exceptional results for our clients.
+                    </p>
+                </div>
+
+                <div class="team-carousel">
+                    <div class="team-carousel-container">
+                        <div class="team-member">
+                            <div class="team-member-card">
+                                <div class="team-member-image">
+                                    <img src="assets/images/team/member1.jpeg" alt="John Smith">
+                                </div>
+                                <div class="team-member-info">
+                                    <h3 class="team-member-name">John Smith</h3>
+                                    <p class="team-member-position">CEO & Founder</p>
+                                    <div class="team-member-social">
+                                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <div class="team-member-card">
+                                <div class="team-member-image">
+                                    <img src="assets/images/team/member2.jpeg" alt="Sarah Johnson">
+                                </div>
+                                <div class="team-member-info">
+                                    <h3 class="team-member-name">Sarah Johnson</h3>
+                                    <p class="team-member-position">Lead Developer</p>
+                                    <div class="team-member-social">
+                                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <div class="team-member-card">
+                                <div class="team-member-image">
+                                    <img src="assets/images/team/member3.jpeg" alt="Michael Chen">
+                                </div>
+                                <div class="team-member-info">
+                                    <h3 class="team-member-name">Michael Chen</h3>
+                                    <p class="team-member-position">UX Designer</p>
+                                    <div class="team-member-social">
+                                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-dribbble"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <div class="team-member-card">
+                                <div class="team-member-image">
+                                    <img src="assets/images/team/member4.jpeg" alt="Emily Davis">
+                                </div>
+                                <div class="team-member-info">
+                                    <h3 class="team-member-name">Emily Davis</h3>
+                                    <p class="team-member-position">Project Manager</p>
+                                    <div class="team-member-social">
+                                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Navigation Arrows -->
+                    <div class="team-carousel-arrow prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </div>
+                    <div class="team-carousel-arrow next">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    
+                    <!-- Navigation Dots -->
+                    <div class="team-carousel-nav">
+                        <div class="team-carousel-dot active"></div>
+                        <div class="team-carousel-dot"></div>
+                        <div class="team-carousel-dot"></div>
+                        <div class="team-carousel-dot"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vision Section -->
+        <section class="vision-section" id="vision">
+            <div class="vision-container">
+                <h2 class="vision-title">Our Vision</h2>
+                <div class="vision-content">
+                    <div class="vision-text">
+                        <h3 class="vision-subtitle">Shaping the Future of Technology</h3>
+                        <p class="vision-description">
+                            We envision a world where technology seamlessly integrates with everyday life, making it more efficient, 
+                            sustainable, and accessible to everyone. Our mission is to lead this transformation through innovation 
+                            and excellence.
+                        </p>
+                        <ul class="vision-points">
+                            <li class="vision-point">
+                                <i class="fas fa-lightbulb"></i>
+                                <span class="vision-point-text">Innovative Solutions for Tomorrow's Challenges</span>
+                            </li>
+                            <li class="vision-point">
+                                <i class="fas fa-globe"></i>
+                                <span class="vision-point-text">Global Impact Through Local Excellence</span>
+                            </li>
+                            <li class="vision-point">
+                                <i class="fas fa-users"></i>
+                                <span class="vision-point-text">Building Strong Communities and Partnerships</span>
+                            </li>
+                            <li class="vision-point">
+                                <i class="fas fa-rocket"></i>
+                                <span class="vision-point-text">Driving Sustainable Growth and Innovation</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="vision-images">
+                        <div class="vision-image main" data-title="Innovating Tomorrow">
+                            <img src="assets/images/vision/main-vision.jpg" alt="Tech Innovation">
+                        </div>
+                        <div class="vision-image top" data-title="Future Technology">
+                            <img src="assets/images/vision/vision-top.jpg" alt="Future Technology">
+                        </div>
+                        <div class="vision-image bottom" data-title="Community Impact">
+                            <img src="assets/images/vision/vision-bottom.jpg" alt="Community Impact">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!-- Testimonial Section -->
+<section class="testimonial-section" id="testimonials">
+    <!-- Floating Shapes -->
+    <div class="testimonial-shape testimonial-shape-1"></div>
+    <div class="testimonial-shape testimonial-shape-2"></div>
+
+    <div class="testimonial-container">
+        <div class="testimonial-header">
+            <h3 class="testimonial-subtitle">Testimonials</h3>
+            <h2 class="testimonial-title">What Our Clients Say</h2>
+            <p class="testimonial-description">
+                Discover why clients trust us to bring their visions to life through innovative solutions and exceptional service.
+            </p>
+        </div>
+
+        <div class="testimonial-carousel">
+            <div class="testimonial-track">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <span class="testimonial-quote">"</span>
+                        <p>Working with this team has been an absolute pleasure. Their innovative approach and attention to detail transformed our vision into reality.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="assets/images/testimonial/client1.jpeg" alt="Sarah Johnson">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4 class="testimonial-name">Sarah Johnson</h4>
+                            <p class="testimonial-position">CEO, TechStart</p>
+                            <div class="testimonial-rating">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <span class="testimonial-quote">"</span>
+                        <p>The level of expertise and professionalism displayed by the team exceeded our expectations. They delivered outstanding results on time.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="assets/images/testimonial/client2.jpeg" alt="Michael Chen">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4 class="testimonial-name">Michael Chen</h4>
+                            <p class="testimonial-position">CTO, InnovateCorp</p>
+                            <div class="testimonial-rating">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <span class="testimonial-quote">"</span>
+                        <p>Their creative solutions and technical expertise helped us achieve our goals faster than we thought possible. Highly recommended!</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="assets/images/testimonial/client3.jpeg" alt="Emily Rodriguez">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4 class="testimonial-name">Emily Rodriguez</h4>
+                            <p class="testimonial-position">Product Manager, NextGen</p>
+                            <div class="testimonial-rating">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <span class="testimonial-quote">"</span>
+                        <p>The team's dedication to quality and innovation has made them our go-to partner for all our technical needs. Exceptional service!</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="assets/images/testimonial/client4.jpeg" alt="David Smith">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4 class="testimonial-name">David Smith</h4>
+                            <p class="testimonial-position">Director, FutureTech</p>
+                            <div class="testimonial-rating">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 5 -->
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <span class="testimonial-quote">"</span>
+                        <p>Outstanding support and communication throughout the project. They truly understand client needs and deliver beyond expectations.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="assets/images/testimonial/client5.jpeg" alt="Lisa Wang">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4 class="testimonial-name">Lisa Wang</h4>
+                            <p class="testimonial-position">Founder, InnovateX</p>
+                            <div class="testimonial-rating">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 6 -->
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <span class="testimonial-quote">"</span>
+                        <p>Their expertise in cutting-edge technologies and commitment to excellence makes them stand out. A fantastic partner for success!</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="assets/images/testimonial/client6.jpeg" alt="James Wilson">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4 class="testimonial-name">James Wilson</h4>
+                            <p class="testimonial-position">CEO, TechVision</p>
+                            <div class="testimonial-rating">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <div class="testimonial-navigation">
+                <div class="testimonial-arrow prev">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="testimonial-dots">
+                    <div class="testimonial-dot active"></div>
+                    <div class="testimonial-dot"></div>
+                    <div class="testimonial-dot"></div>
+                    <div class="testimonial-dot"></div>
+                </div>
+                <div class="testimonial-arrow next">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FAQ Section Start -->
+<section class="faq-section">
+    <div class="animated-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="rgba(0, 97, 255, 0.1)" d="M47.5,-57.5C59.3,-46.1,65.1,-29,67.2,-11.2C69.2,6.7,67.4,25.3,58.3,38.4C49.2,51.5,32.7,59.1,15.3,62.2C-2.1,65.3,-20.4,63.9,-36.4,55.9C-52.4,47.9,-66,33.3,-70.8,15.8C-75.6,-1.7,-71.5,-22.1,-60.4,-35.8C-49.4,-49.5,-31.3,-56.5,-13.6,-58.7C4.1,-60.9,35.7,-68.9,47.5,-57.5Z" transform="translate(100 100)" />
+            </svg>
+        </div>
+        <div class="shape shape-6">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="rgba(96, 239, 255, 0.1)" d="M54.6,-67.3C69.8,-55.3,80.6,-37.1,83.7,-17.7C86.8,1.8,82.2,22.4,71.2,37.8C60.2,53.2,42.8,63.3,24.4,69.2C6,75,-13.3,76.6,-31.9,71.1C-50.5,65.6,-68.3,53,-77.7,35C-87.1,17,-88,-6.5,-80.3,-25.8C-72.6,-45.1,-56.2,-60.3,-39.1,-71.4C-21.9,-82.5,-3.9,-89.6,12.4,-85.8C28.7,-82,39.4,-79.3,54.6,-67.3Z" transform="translate(100 100)" />
+            </svg>
+        </div>
+    </div>
+    <div class="container">
+        <div class="faq-wrapper">
+            <div class="faq-content">
+                <div class="faq-header">
+                    <span class="faq-subtitle">FAQ</span>
+                    <h2 class="faq-title">Frequently Asked Questions</h2>
+                    <p class="faq-description">Find answers to common questions about our services and solutions</p>
+                </div>
+
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What services do you offer?</h3>
+                            <span class="faq-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We offer a comprehensive range of digital services including web development, mobile app development, UI/UX design, digital marketing, and IT consulting. Our team specializes in creating custom solutions tailored to your specific needs.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How long does it take to complete a project?</h3>
+                            <span class="faq-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Project timelines vary depending on complexity and scope. A simple website might take 4-6 weeks, while more complex applications can take 3-6 months. We'll provide a detailed timeline during our initial consultation.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Do you provide ongoing support?</h3>
+                            <span class="faq-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we offer comprehensive maintenance and support packages. This includes regular updates, security patches, performance monitoring, and technical support to ensure your digital solutions continue to run smoothly.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What is your development process?</h3>
+                            <span class="faq-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We follow an agile development methodology with clear phases: Discovery, Planning, Design, Development, Testing, and Deployment. Regular client communication and feedback are integral to our process.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How do you handle project pricing?</h3>
+                            <span class="faq-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We offer flexible pricing models including fixed-price and time-and-materials. After understanding your requirements, we'll provide a detailed proposal with transparent pricing and no hidden costs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-image">
+                <img src="assets/images/vision/main-vision.jpg" alt="FAQ Illustration">
+                <div class="faq-shape-1"></div>
+                <div class="faq-shape-2"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FAQ Section End -->
+<!-- Blog Section Start -->
+<section class="blog-section">
+    <div class="container">
+        <div class="blog-header">
+            <span class="blog-subtitle">Our Blog</span>
+            <h2 class="blog-title">Latest Insights & News</h2>
+            <p class="blog-description">Stay updated with our latest thoughts on technology, innovation, and digital transformation</p>
+        </div>
+
+        <div class="blog-grid">
+            <!-- Blog Card 1 -->
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="assets/images/hero1.jpg" alt="AI in Modern Business">
+                    <span class="blog-category">Technology</span>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span><i class="far fa-calendar"></i> Jan 05, 2025</span>
+                        <span><i class="far fa-user"></i> John Smith</span>
+                    </div>
+                    <h3>The Impact of AI on Modern Business Operations</h3>
+                    <p class="blog-excerpt">Explore how artificial intelligence is revolutionizing business processes and decision-making in the digital age.</p>
+                    <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <!-- Blog Card 2 -->
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="assets/images/hero2.jpg" alt="Cloud Computing Trends">
+                    <span class="blog-category">Cloud</span>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span><i class="far fa-calendar"></i> Jan 03, 2025</span>
+                        <span><i class="far fa-user"></i> Sarah Johnson</span>
+                    </div>
+                    <h3>Emerging Trends in Cloud Computing for 2025</h3>
+                    <p class="blog-excerpt">Discover the latest trends and innovations shaping the future of cloud computing and digital infrastructure.</p>
+                    <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <!-- Blog Card 3 -->
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="assets/images/hero3.jpg" alt="Cybersecurity Best Practices">
+                    <span class="blog-category">Security</span>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span><i class="far fa-calendar"></i> Jan 01, 2025</span>
+                        <span><i class="far fa-user"></i> Mike Wilson</span>
+                    </div>
+                    <h3>Essential Cybersecurity Best Practices for 2025</h3>
+                    <p class="blog-excerpt">Learn about the critical security measures and practices to protect your digital assets in today's threat landscape.</p>
+                    <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+        </div>
+
+        <div class="blog-action">
+            <a href="blog.html" class="view-all-btn">
+                View All Posts
+                <span class="btn-effect"></span>
+            </a>
+        </div>
+    </div>
+</section>
+<!-- Blog Section End -->
+ <!-- Pricing Section Start -->
+<section class="pricing-section">
+    <div class="container">
+        <div class="pricing-header">
+            <span class="pricing-subtitle">Pricing Plans</span>
+            <h2 class="pricing-title">Choose the Perfect Plan</h2>
+            <p class="pricing-description">Select the best pricing plan for your needs. Switch between monthly and yearly billing.</p>
+        </div>
+
+        <div class="pricing-toggle">
+            <span class="toggle-text monthly-text active">Monthly</span>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+            <span class="toggle-text yearly-text">Yearly</span>
+        </div>
+
+        <div class="pricing-grid">
+            <!-- Basic Plan -->
+            <div class="pricing-card">
+                <h3 class="plan-name">Basic</h3>
+                <div class="monthly-price">
+                    <div class="plan-price">29</div>
+                    <div class="plan-duration">per month</div>
+                </div>
+                <div class="yearly-price">
+                    <div class="plan-price">290</div>
+                    <div class="plan-duration">per year</div>
+                </div>
+                <ul class="plan-features">
+                    <li>5 Projects</li>
+                    <li>10GB Storage</li>
+                    <li>Basic Support</li>
+                    <li>Email Integration</li>
+                    <li>Basic Analytics</li>
+                </ul>
+                <a href="#" class="plan-button">Get Started</a>
+            </div>
+
+            <!-- Pro Plan -->
+            <div class="pricing-card popular">
+                <span class="popular-save">Save 20%</span>
+                <h3 class="plan-name">Pro</h3>
+                <div class="monthly-price">
+                    <div class="plan-price">79</div>
+                    <div class="plan-duration">per month</div>
+                </div>
+                <div class="yearly-price">
+                    <div class="plan-price">790</div>
+                    <div class="plan-duration">per year</div>
+                </div>
+                <ul class="plan-features">
+                    <li>15 Projects</li>
+                    <li>50GB Storage</li>
+                    <li>Priority Support</li>
+                    <li>Advanced Integrations</li>
+                    <li>Advanced Analytics</li>
+                </ul>
+                <a href="#" class="plan-button">Get Started Now</a>
+            </div>
+
+            <!-- Enterprise Plan -->
+            <div class="pricing-card">
+                <h3 class="plan-name">Enterprise</h3>
+                <div class="monthly-price">
+                    <div class="plan-price">199</div>
+                    <div class="plan-duration">per month</div>
+                </div>
+                <div class="yearly-price">
+                    <div class="plan-price">1990</div>
+                    <div class="plan-duration">per year</div>
+                </div>
+                <ul class="plan-features">
+                    <li>Unlimited Projects</li>
+                    <li>500GB Storage</li>
+                    <li>24/7 Support</li>
+                    <li>Custom Integrations</li>
+                    <li>Custom Analytics</li>
+                </ul>
+                <a href="#" class="plan-button">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Pricing Section End -->
+ <!-- Call to Action Section -->
+ <section class="cta-section">
+    <div class="particles">
+        <div class="particle" style="left: 20%; animation-delay: 0s;"></div>
+        <div class="particle" style="left: 40%; animation-delay: 2s;"></div>
+        <div class="particle" style="left: 60%; animation-delay: 4s;"></div>
+        <div class="particle" style="left: 80%; animation-delay: 6s;"></div>
+        <div class="particle" style="left: 30%; animation-delay: 8s;"></div>
+        <div class="particle" style="left: 70%; animation-delay: 10s;"></div>
+        <div class="particle" style="left: 50%; animation-delay: 12s;"></div>
+        <div class="particle" style="left: 90%; animation-delay: 14s;"></div>
+    </div>
+    <div class="cta-shapes">
+        <div class="cta-shape"></div>
+        <div class="cta-shape"></div>
+    </div>
+    <div class="container">
+        <div class="cta-content">
+            <div class="cta-subtitle">Ready to Get Started?</div>
+            <h2 class="cta-title">Transform Your Business Today</h2>
+            <p class="cta-description">
+                Join thousands of satisfied customers who have already taken their business to the next level. 
+                Start your journey with us and experience the difference.
+            </p>
+            <div class="cta-buttons">
+                <a href="#" class="cta-button cta-button-primary">Get Started Now</a>
+                <a href="#" class="cta-button cta-button-secondary">Schedule Demo</a>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <div class="divider">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none" style="width: 100%; height: 100%;">
+            <defs>
+                <linearGradient id="footerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#2d2d2d;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <path fill="url(#footerGradient)" fill-opacity="1" d="M0,160L48,170.7C96,181,192,203,288,192C384,181,480,139,576,138.7C672,139,768,181,864,181.3C960,181,1056,139,1152,122.7C1248,107,1344,117,1392,122.7L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+        </svg>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-grid">
+                    <!-- Brand Section -->
+                    <div class="footer-brand">
+                        <div class="footer-logo">TechFlow</div>
+                        <p class="footer-description">
+                            Empowering businesses with cutting-edge technology solutions. 
+                            Join us in shaping the future of digital transformation.
+                        </p>
+                        <div class="footer-social">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="footer-links-column">
+                        <h3 class="footer-links-title">Quick Links</h3>
+                        <ul class="footer-links">
+                            <li class="footer-link"><a href="#">About Us</a></li>
+                            <li class="footer-link"><a href="#">Services</a></li>
+                            <li class="footer-link"><a href="#">Portfolio</a></li>
+                            <li class="footer-link"><a href="#">Contact</a></li>
+                            <li class="footer-link"><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Services -->
+                    <div class="footer-links-column">
+                        <h3 class="footer-links-title">Services</h3>
+                        <ul class="footer-links">
+                            <li class="footer-link"><a href="#">Web Development</a></li>
+                            <li class="footer-link"><a href="#">App Development</a></li>
+                            <li class="footer-link"><a href="#">UI/UX Design</a></li>
+                            <li class="footer-link"><a href="#">Consulting</a></li>
+                            <li class="footer-link"><a href="#">Marketing</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact -->
+                    <div class="footer-links-column">
+                        <h3 class="footer-links-title">Contact</h3>
+                        <ul class="footer-links">
+                            <li class="footer-link"><a href="#">Help Center</a></li>
+                            <li class="footer-link"><a href="#">Support</a></li>
+                            <li class="footer-link"><a href="#">Privacy Policy</a></li>
+                            <li class="footer-link"><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="footer-newsletter">
+                        <h3 class="newsletter-title">Subscribe to Our Newsletter</h3>
+                        <form class="newsletter-form">
+                            <input type="email" class="newsletter-input" placeholder="Enter your email">
+                            <button type="submit" class="newsletter-button">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Footer Bottom -->
+                <div class="footer-bottom">
+                    <div class="footer-copyright">
+                        &copy; 2025 TechFlow. All rights reserved.
+                    </div>
+                    <div class="footer-bottom-links">
+                        <a href="#" class="footer-bottom-link">Privacy Policy</a>
+                        <a href="#" class="footer-bottom-link">Terms of Service</a>
+                        <a href="#" class="footer-bottom-link">Cookie Settings</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/hero.js"></script>
+    <script src="js/about-us-section-home.js"></script>
+    <script src="js/services-section-home.js"></script>
+    <script src="js/portfolio-section-home.js"></script>
+    <script src="js/vision-section-home.js"></script>
+    <script src="js/team-section-home.js"></script>
+    <script src="js/testimonial-section-home.js"></script>
+    <script src="js/faq-section-home.js"></script>
+    <script src="js/blog-section-home.js"></script>
+    <script src="js/pricing-section-home.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/preloader.js"></script>
+</body>
+</html>
